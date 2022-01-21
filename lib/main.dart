@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_base/home.dart';
+import 'package:flutter_base/title_appbar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +20,10 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           centerTitle: true,
-          title: Text('Streams'),
+          title: TitleAppBar(
+            title: "Jocel",
+            color: Colors.white,
+          ),
         ),
         body: MyHomePage(),
       ),
